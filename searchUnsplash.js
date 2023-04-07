@@ -26,11 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 var results = document.querySelector('#gallery');
                 results.innerHTML = '';
                 data.results.forEach(function(photo) {
-                    results.innerHTML += `<div>
-                                                <a href="${photo.urls.regular}" target="_blank"><img src="${photo.urls.regular}" loading="lazy" alt=""></a>
-                                            </div>
-                                            <div class="lightbox">
-                                            </div>`;
+                    results.innerHTML += `<div><a href="${photo.urls.regular}" target="_blank"><img src="${photo.urls.regular}" loading="lazy" alt=""></a></div>`;
                 });
             }
         };
